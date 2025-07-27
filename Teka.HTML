@@ -3,6 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>Teká</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+  }
+  .item {
+    width: 100%; /* Por defecto, cada elemento ocupa el 100% del ancho */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+  }
+  @media (min-width: 600px) {
+    .item {
+      width: 50%; /* En pantallas más grandes, cada elemento ocupa el 50% */
+    }
+  }
+  @media (min-width: 900px) {
+    .item {
+      width: 33.33%; /* En pantallas aún más grandes, cada elemento ocupa el 33.33% */
+    }
+</style>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -139,15 +160,15 @@
     <a href="#contact">Contáctenos</a>
   </nav>
   
-  <section id="home" style="text-align: center; padding: 60px 20px; background-image: url('tres.jpg'); background-size: cover; color: black;">
-    <h1>Bienvenido a Teká</h1>
+  <section id="home" style="text-align: center; padding: 60px 20px; : background-size: cover; color: white;">
+	<h1>Bienvenido a Teká</h1>
     <p> Una experiencia que une el aroma del café con la paz del té </p>
     <p> Descubre nuestros productos, recetas y todo lo que hace especial a Teká </p>
 	<p> ¿Estas Estresado? Un taza de té es lo que necesitas</p>
 	<p> ¿Estás Cansado? Un poco de café te ayudará </p>
   </section>
 
-  <section id="home" style="text-align: center; padding: 60px 20px; background-image: url('canela.jpg'); background-size: cover; color: black;">
+  <section id="home" style="text-align: center; padding: 60px 20px; background-color: #808b96; background-size: cover; color: white;">
     <h2 style="text-align: center;">Nuestra Historia</h2>
     <div style="max-width: 700px; margin: auto; text-align: justify;">
       <p> Teká nació de la pasión por las infusiones naturales y el café artesanal. 
